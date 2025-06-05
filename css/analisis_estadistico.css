@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+
+  .logo {
+    height: 50px;
+    margin-right: 1em;
+    vertical-align: middle;
+    float: left;
+  }
+
+  header {
+    background-color: #0e6ab3;
+    color: white;
+    padding: 1em;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center; /* centra verticalmente */
+  }
+  
+  .logo {
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 6px;
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  .header-text p {
+    margin: 0;
+    font-size: 1em;
+    color: #ecf0f1;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .sidebar, .main, .right-panel {
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+  .sidebar {
+    width: 25%;
+    background-color: #ecf0f1;
+  }
+
+  .main {
+    width: 50%;
+    background-color: #ffffff;
+  }
+
+  .right-panel {
+    width: 25%;
+    background-color: #ecf0f1;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #2c3e50;
+  }
+
+  ul {
+    padding-left: 1.2em;
+  }
+
+  ul li {
+    margin-bottom: 0.4em;
+  }
+
+  canvas {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  /* ✅ RESPONSIVE DESIGN */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .sidebar, .main, .right-panel {
+      width: 100%;
+    }
+
+    .right-panel {
+      order: -1; /* Mostrar primero en móviles */
+    }
+
+    .main {
+      order: 0;
+    }
+
+    .sidebar {
+      order: 1;
+    }
+  }
